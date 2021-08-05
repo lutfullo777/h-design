@@ -30,7 +30,7 @@ const Header = () => {
       <div className="header flex">
         <div className="header-logo flex">
           <h3>
-            <a href="h-design.netlify.app">H-design</a>
+            <a href="h-design1.netlify.app">H-design</a>
           </h3>
         </div>
         <div className="header-menu flex">
