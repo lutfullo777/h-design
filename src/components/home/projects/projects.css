@@ -1,0 +1,54 @@
+.projects {
+  width: 90%;
+  margin: auto;
+  padding: 30px 0;
+  min-height: 200px;
+}
+.project-div {
+  list-style: none;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.project-div div {
+  width: 30%;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+.project-div div figure {
+  height: 200px;
+  overflow: hidden;
+}
+.project-div div img {
+  display: block;
+  transition: 0.3s;
+  width: 100%;
+  height: 200px;
+
+  box-sizing: border-box;
+}
+.project-div div img:hover {
+  transform: scale(1.1);
+}
+.project-div div span {
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  width: 120px;
+}
+.project-div div span:hover {
+  padding-right: 10px;
+  color: rgb(255, 123, 71);
+}
+.project-div div span::after {
+  content: "";
+  width: 25px;
+  height: 3px;
+  background-color: rgb(255, 123, 71);
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .project-div div {
+    width: 100%;
+  }
+}

@@ -1,0 +1,28 @@
+.about {
+  width: 100%;
+  margin-top: 20px;
+  min-height: 500px;
+}
+.about-div {
+  flex-wrap: wrap;
+  width: 100%;
+}
+.about-div div {
+  width: 50%;
+  margin-top: 20px;
+}
+.about-div div div {
+  width: 80%;
+  height: 300px;
+  margin: auto;
+}
+.about-div div img {
+  height: 300px;
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .about-div div {
+    width: 100%;
+  }
+}

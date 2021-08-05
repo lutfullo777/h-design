@@ -1,0 +1,130 @@
+.gallery {
+  width: 100%;
+  margin: 20px 0;
+}
+.gallery-container {
+  width: 90%;
+  margin: auto;
+}
+
+.filter {
+  width: 80%;
+  margin: 20px auto;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.filter li {
+  width: 18%;
+  height: 30px;
+
+  text-align: center;
+  cursor: pointer;
+}
+.filter li.active {
+  background-color: rgb(255, 123, 71);
+}
+.filter li:hover::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: rgb(255, 123, 71);
+  display: block;
+  animation: afterAnime 0.3s ease-in;
+}
+
+.images {
+  width: 100%;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.itemsBox {
+  width: 33%;
+  padding: 10px 10px 0 0;
+  box-sizing: border-box;
+  height: 250px;
+  position: relative;
+}
+.images div img {
+  width: 100%;
+  height: 100%;
+}
+.itemsBox div {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 250px;
+  padding-top: 80px;
+  color: white;
+  top: 250px;
+  left: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -250px);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.itemsBox:hover div {
+  opacity: 1;
+}
+.itemsBox div p {
+  font-size: 1.2em;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+.itemsBox span {
+  transition: 0.2s ease-in;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  color: rgb(255, 123, 71);
+  font-weight: bolder;
+  font-size: 12px;
+  position: relative;
+}
+.itemsBox span:hover::after {
+  transform: translateX(5px);
+}
+.itemsBox div span::after {
+  content: "";
+  width: 25px;
+  height: 3px;
+  background-color: rgb(255, 123, 71);
+  display: block;
+}
+@media (max-width: 900px) {
+  .itemsBox {
+    width: 50%;
+  }
+  .filter {
+    width: 100%;
+  }
+  .filter li {
+    width: 140px;
+  }
+}
+@media (max-width: 600px) {
+  .itemsBox {
+    width: 100%;
+  }
+  .gallery-container {
+    width: 95%;
+  }
+  .filter {
+    width: 100%;
+  }
+  .filter li {
+    width: 110px;
+  }
+}
+@keyframes afterAnime {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
