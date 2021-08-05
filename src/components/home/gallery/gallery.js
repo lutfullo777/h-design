@@ -30,7 +30,7 @@ const Gallery = () => {
   });
   return (
     <div className="gallery">
-      <div data-aos="fade-right">
+      <div data-aos="fade-right" style={{ marginLeft: "5%" }}>
         <h3 className="theme">GALLERY</h3>
       </div>
       <div className="gallery-container">
